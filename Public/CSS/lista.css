@@ -1,0 +1,31 @@
+
+a{
+    background-color:rgb(247, 252, 252);
+    width: 350px;
+    text-align:center;
+    left: 200px;
+    top: 120px;
+    margin-left:200px;
+    margin-top:40px;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    font-size: 18px;
+    display: flex;
+}
+
+#titulo{
+    color:rgb(255, 136, 0);
+    font-size-adjust: none;
+}
+
+body{ 
+    background-image: url(../IMG/fundo.jpg);
+	display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    padding-top: 40px;
+    margin-left: 300px;
+}
