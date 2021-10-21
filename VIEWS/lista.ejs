@@ -8,15 +8,27 @@
     <title>lista</title>
 </head>
 <body>
-    <section id="a">
-    <a type ="submit" href="/lista" >Inicio</a>
-    <a type ="submit" href="/criar">Cadastrar</a>
-    <a type ="submit" href="/detalhes" >Detalhes</a>
-    <a type ="submit" href="/editar">Filmes</a>
-    </section>
-        
-    <section id="titulo">
-         <h1>MCU -  Marvel Cinematic Universe </h1>
-    </section>
+    <header>
+        <nav>
+            <a class="logo" href="/">MCU</a>
+            <div class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/criar">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+  <section>
+    <% filmes.forEach(item => { %>
+    <a href="/detalhes/<%= item.id %>">
+       <div id= "lista"> 
+           <img src= "<%= item.imagem %>">
+        <h2>Nome:<%= item.nome %></h2>
+       </div>
+    <% }) %>
+</section>
+    <main></main>
 </body>
 </html>

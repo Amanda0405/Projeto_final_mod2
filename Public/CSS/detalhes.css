@@ -6,12 +6,6 @@
 body{
     background-color: rgb(79, 108, 133);
 }
-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-}
 
 a{
     color:black;

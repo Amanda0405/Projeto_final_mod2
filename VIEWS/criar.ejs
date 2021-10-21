@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/criar.css">
     <title>lista</title>
 </head>
 <body>
-    <h1>Lista de Filmes</h1>
+
+    <header>
+        <nav>
+            <a class="logo" href="/">Inicio</a>
+            <div class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            </div>
+            <ul class="nav-list">
+            </ul>
+        </nav>
+    </header>
+
+    <section id="titulo">
+        <h1>Cadastro dos filmes da franquia</h1>
+   </section>
+   <form id="form" action ="/criar" method = "POST">
+      <div>
+          <label for ="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" placeholder="Filme" required>
+      </div>
+      <div>
+        <label for ="ano">Lançamento:</label>
+        <input type="number" name="ano" id="ano" placeholder="Ano" required>
+    </div>
+    <div>
+        <label for ="fase">Fase:</label>
+        <input type="number" name="fase" id="fase" placeholder="Fase" required>
+    </div>
+    <div>
+        <label for ="imagem">Imagem:</label>
+        <input type="file" name="imagem" id="imagem" required>
+    </div>
+      <button type= "submit">Cadastrar</button>
+</form>
+        <script src="/index.js"></script>
 </body>
 </html>

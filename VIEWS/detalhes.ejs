@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/detalhes.css">
-    <title>Document</title>
+    <title>Detalhes</title>
 </head>
 <body>
-    
+  <header>
+    <nav>
+        <a class="logo" href="/">Inicio</a>
+        <div class="menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="/criar">Cadastrar</a></li>
+        </ul>
+    </nav>
+</header>
+<section method="GET" action= /detalhes>
+  <h1 >Informacoes do filme</h1>
+  <body>
+    <header class="centralize">
+      <p class="fontZ">
+        <img src="<%=filme.imagem%>" alt="Filme" class="imag" height="300" width="250" class="img-file" alt = "<% filme.Nome %>">
+        <p>
+          <h2>Lançamento:</h2><%= filme.ano %>
+        </p>
+        <p>
+          <h2>Fase:</h2><%= filme.fase %>
+        </p>
+      </header>
+      <div id = "botão">
+        <a href="/editar/<%=filme.ID%>" class = "botao"><button>Editar</button></a>
+        <a href="/deletar/<%=filme.ID%>" class = "botao"><button>Excluir</button></a>
+      </div>  
 </body>
+<script src="/index.js"></script>
 </html>
