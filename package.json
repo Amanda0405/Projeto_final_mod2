@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Amanda0405/Projeto_final_mod2#readme",
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.14"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
