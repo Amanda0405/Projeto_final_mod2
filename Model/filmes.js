@@ -31,4 +31,5 @@ const Filmes = database.sequelize.define("filmes", {
     updatedAt: false,
 })
 
+Filmes.sync({ force: false });
 module.exports = Filmes;

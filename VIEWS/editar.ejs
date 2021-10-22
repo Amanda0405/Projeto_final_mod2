@@ -8,6 +8,24 @@
     <title>Document</title>
 </head>
 <body>
+    <form id="form" action ="/editar/<%=filme.id %>" method = "POST">
+        <div>
+            <label for ="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Filme" value = "<%= filme.nome %>" required>
+        </div>
+        <div>
+          <label for ="ano">Lançamento:</label>
+          <input type="number" name="ano" id="ano" placeholder="Ano" value = "<%= filme.ano %>"required>
+      </div>
+      <div>
+          <label for ="fase">Fase:</label>
+          <input type="number" name="fase" id="fase" placeholder="Fase" value = "<%= filme.fase %>" required>
+      </div>
+      <div>
+          <label for ="imagem">Imagem:</label>
+          <input type="file" name="imagem" id="imagem" value = "<%= filme.imagem %>" required>
+      </div>
+        <button type= "submit">Editar</button>
     
 </body>
 <script src="/index.js"></script>

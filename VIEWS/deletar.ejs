@@ -9,8 +9,8 @@
 </head>
 <body>
     
-    <h1>Deseja mesmo deletar esse filme?</h1>
-    <form method="POST" action="/deletar/<%=filme.ID%>">
+    <h1>Deseja mesmo deletar o filme <%= filme.nome %>?</h1>
+    <form method="POST" action="/deletar/<%=filme.id%>">
         <button class="botao" type="submit" >Sim</button>
     </form>
     <a href="/lista">Não</a>
